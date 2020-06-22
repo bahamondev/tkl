@@ -1,6 +1,6 @@
 # tkl
 
-Shortcut and keys remap for "ten key less" keyboards. This scripts intention is to ease: 
+Shortcut and keys remap for "ten key less" keyboards. This scripts are intended to ease: 
  * The use of TKL and 60% keyboards (but the shortcuts are also useful for full-sized keyboards).
  * The input of latin characters in US keyboard layouts.
  * Avoid the mouse and provide a fast-change between common development apps (at least faster than Alt+Tab method).
