@@ -41,7 +41,7 @@ For now run the script with [Autohotkey](https://www.autohotkey.com). As soon as
     * `Ctrl + super + V`: Activates/Minimize Visual Studio Code window
     * `Ctrl + super + B`: Activates/Minimize Vivaldi (Browser) window
 
-** TODO list:**
+**TODO list:**
 
  * Add support for linux (with autokey?)
  
