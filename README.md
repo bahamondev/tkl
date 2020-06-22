@@ -41,13 +41,20 @@ For now run the script with [Autohotkey](https://www.autohotkey.com). As soon as
     * `Ctrl + super + V`: Activates/Minimize Visual Studio Code window
     * `Ctrl + super + B`: Activates/Minimize Vivaldi (Browser) window
 
+## Contributing
+
+Follow this simple rules:
+
+ * Use [conventional commits](conventionalcommits.org) standard for commit messages.
+ * Open an issue if none is provided for new funcionalities/fixes, then code and finally send a pull request.
+ 
 **TODO list:**
 
  * Add support for linux (with autokey?)
  
- * Map the shift key to caps lock (shift + key acts as expected, when only shift key is pressed then toggle caps lock)
+ * Map the shift key to caps lock (`shift + key` acts as expected, when only `shift` key is pressed then toggle caps lock)
  
- * Remap caps lock to useful features (convert/format text, run deepl translation tool...)
+ * Remap `caps lock` to useful features (convert/format text, run deepl translation tool...)
  
  * `Ctrl + super + B` opens the default browser
 
