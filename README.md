@@ -11,15 +11,15 @@ For now run the script with [Autohotkey](https://www.autohotkey.com). As soon as
 
 ## Features
 
-  * Maps `right alt` and `AltGr` keys to the `AppsKey`
+  * Maps `Right Alt` and `AltGr` keys to the `AppsKey`
   
     No AppsKey in TKL keyboards so this allows to use the right alt key as the AppsKey.
     
-  * Maps `left super` to `alt + space`
+  * Maps `Left Super` to `Alt + Space`
   
     The intention is to open the alternative app launcher with the "windows" key (windows powertoys launcher, krunner...)
     
-  * Disable `right alt + space` shortcut
+  * Disable `Right Alt + Space` shortcut
     
     That should avoid weird behaviour when using AppsKey custom shortcuts.
     
@@ -35,11 +35,14 @@ For now run the script with [Autohotkey](https://www.autohotkey.com). As soon as
     * `AppsKey + Del`: mute
     * `AppsKey + End`: Play/pause
     
+  * Useful operations:
+    * `AppsKey + V`: Pastes clipboard content without format
+    
   * Add useful shortcuts to active some app windows:
-    * `Ctrl + super + T`: Activates/Minimize Microsoft Teams window
-    * `Ctrl + super + I`: Activates/Minimize Intellij Idea window
-    * `Ctrl + super + V`: Activates/Minimize Visual Studio Code window
-    * `Ctrl + super + B`: Activates/Minimize Vivaldi (Browser) window
+    * `Ctrl + Super + T`: Activates/Minimize Microsoft Teams window
+    * `Ctrl + Super + I`: Activates/Minimize Intellij Idea window
+    * `Ctrl + Super + V`: Activates/Minimize Visual Studio Code window
+    * `Ctrl + Super + B`: Activates/Minimize Vivaldi (Browser) window
 
 ## Contributing
 
