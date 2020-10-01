@@ -16,11 +16,7 @@ For now run the script with [Autohotkey](https://www.autohotkey.com). As soon as
     * `Left Super` to `Alt + Space`. That could help open your app launcher with the super key.
     
   * Ease the input of accents and special characters.
-<<<<<<< HEAD
-    Using `Alt + key` works as a US International Layout in Windows but ` key works like US default layout.
-=======
-    Using `Alt + key` works as a US International Layout in Windows but ', " and ` works like US default layout.
->>>>>>> 9353e263f140a002547e90805c263c35dc3592b2
+    Using `Alt + key` works as a US International Layout in Windows but spanish accent key works like in US default layout.
 
   * Add media control shortcuts:
     * `AppsKey + (arrow left/right)`: Previous/next song
@@ -49,11 +45,7 @@ Follow this simple rules:
  * Make the right `Ctrl` great again. I'm thinking on how to remap that key to make it useful.
  * Automate a build to get an .exe (and add a Makefile).
  * Automate the installation.
-<<<<<<< HEAD
  * Customize the build result. The user should select which features are needed.
-=======
- * Customize the build result. The user should select which functionality is needed.
->>>>>>> 9353e263f140a002547e90805c263c35dc3592b2
 
 ## Contact
 
