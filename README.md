@@ -2,7 +2,7 @@
 
 Shortcut and keys remap for "ten key less" keyboards on Windows systems. This scripts are intended to ease: 
  * The use of TKL and 60% keyboards (but the shortcuts are also useful for full-sized keyboards).
- * The input of latin characters in US keyboard layouts. Emulates the US alternative international layout.
+ * The input of latin characters in US keyboard layouts. Emulates the US international layout with `AltGr` dead keys.
  * Avoid the mouse and provide a fast-change between common development apps (at least faster than Alt+Tab method).
 
 ## Setup
@@ -16,7 +16,7 @@ For now run the scripts with [Autohotkey](https://www.autohotkey.com). Maybe a b
     * `Left Super` to `Alt + Space`. That could help open your app launcher with the super key.
     
   * Ease the input of accents and special characters.
-    Using `Alt + key` works as a US International Layout in Windows but spanish accent key works like in US default layout.
+    Using `Alt + key` works as a US International Layout in Windows but '," and ` keys work like in US default layout. So, if you want `á` you need to type `Alt` + `a`.
 
   * Add media control shortcuts:
     * `AppsKey + (arrow left/right)`: Previous/next song
