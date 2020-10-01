@@ -1,188 +1,398 @@
-﻿#NoEnv 
-
-; This script should:
-;  * Maps the right alt and AltGr keys to the AppsKey
-;  * Maps de left super key to alt + space, that should allow to open the powertoys launcher with the "windows" key
-;  * Disable right alt + space shortcut, that should avoid weird behaviour when using AppsKey custom shortcuts:
-;  * Ease the input of accents and special characters:
-;    * AppsKey + (a|e|i|o|u): Inserts á,é,í,ó,ú respectively
-;    * AppsKey + n: Inserts ñ
-;    * AppsKey + c: Inserts ç
-;    * AppsKey + /: Inserts ¿
-;  * Add media control shortcuts:
-;    * AppsKey + (arrow left/right): Previous/next song
-;    * AppsKey + (arrow up/down): Increase/decrease volume
-;    * AppsKey + Del: mute
-;    * AppsKey + End: Play/pause
-;  * Add useful shortcuts to active some app windows:
-;   * Ctrl + super + T: Activates/Minimize Microsoft Teams window
-;   * Ctrl + super + I: Activates/Minimize Intellij Idea window
-;   * Ctrl + super + V: Activates/Minimize Visual Studio Code window
-;   * Ctrl + super + B: Activates/Minimize Vivaldi (Browser) window
-
-SendMode Input
-SetWorkingDir %A_ScriptDir%
-SetTitleMatchMode, RegEx
-
-^#T::
-if WinActive("ahk_exe Teams\.exe")
-    WinMinimize, ahk_exe Teams\.exe
-else
-    WinActivate, ahk_exe Teams\.exe
-Return
-
-^#I::
-if WinActive("ahk_exe idea64\.exe")
-    WinMinimize, ahk_exe idea64\.exe
-else
-    WinActivate, ahk_exe idea64\.exe
-Return
-
-^#V::
-if WinActive("ahk_exe Code\.exe")
-    WinMinimize, ahk_exe Code\.exe
-else
-    WinActivate, ahk_exe Code\.exe
-Return
-
-^#B::
-if WinActive("ahk_exe vivaldi\.exe")
-    WinMinimize, ahk_exe vivaldi\.exe
-else
-    WinActivate, ahk_exe vivaldi\.exe
-Return
-
-RAlt::AppsKey
-<^>!::RAlt
-RAlt & Space::Return
-
-<^>!v::
-RAlt & v::
-AppsKey & v::
-Clipboard := Clipboard
-send ^v
-Return
-
-<^>!n::
-RAlt & n::
-AppsKey & n::
+﻿
+; Upper row
+<^>!q::
+>!q::
 if GetKeyState("Capslock", "T")
-    send Ñ
-else
-    send ñ
-Return
-
-<^>!c::
-RAlt & c::
-AppsKey & c::
-if GetKeyState("Capslock", "T")
-    send Ç
-else
-    send ç
-Return
-
-<^>!a::
-RAlt & a::
-AppsKey & a::
-if GetKeyState("Capslock", "T")
-    send Á
+    send Ä
 else 
-    send á 
+    send ä
+Return
+
+<^>!+q::
+>!+q::
+    send Ä
+Return
+
+<^>!w::
+>!w::
+if GetKeyState("Capslock", "T")
+    send Å
+else 
+    send å
+Return
+
+<^>!+w::
+>!+w::
+if GetKeyState("Capslock", "T")
+    send å
+else 
+    send Å
 Return
 
 <^>!e::
-RAlt & e::
-AppsKey & e::
+>!e::
 if GetKeyState("Capslock", "T")
     send É
 else 
     send é 
 Return
 
-<^>!i::
-RAlt & i::
-AppsKey & i::
+<^>!+e::
+>!+e::
 if GetKeyState("Capslock", "T")
-    send Í
+    send é 
 else 
-    send í
+    send É
 Return
 
-<^>!o::
-RAlt & o::
-AppsKey & o::
+<^>!r::
+>!r::
+    send ®
+Return
+
+<^>!t::
+>!t::
+    send þ
+Return
+
+<^>!+t::
+>!+t::
+    send Þ
+Return
+
+<^>!y::
+>!y::
 if GetKeyState("Capslock", "T")
-    send Ó
+    send Ü
 else 
-    send ó
+    send ü
+Return
+
+<^>!+y::
+>!+y::
+if GetKeyState("Capslock", "T")
+    send ü
+else 
+    send Ü
 Return
 
 <^>!u::
-RAlt & u::
-AppsKey & u::
+>!u::
 if GetKeyState("Capslock", "T")
     send Ú
 else 
     send ú
 Return
+<^>!+u::
+>!+u::
+if GetKeyState("Capslock", "T")
+    send ú
+else 
+    send Ú
+Return
+
+<^>!i::
+>!i::
+if GetKeyState("Capslock", "T")
+    send Í
+else 
+    send í
+Return
+<^>!+i::
+>!+i::
+if GetKeyState("Capslock", "T")
+    send í
+else 
+    send Í
+Return
+
+<^>!o::
+>!o::
+if GetKeyState("Capslock", "T")
+    send Ó
+else 
+    send ó
+Return
+<^>!+o::
+>!+o::
+if GetKeyState("Capslock", "T")
+    send ó
+else 
+    send Ó
+Return
+
+<^>!p::
+>!p::
+if GetKeyState("Capslock", "T")
+    send Ö
+else 
+    send ö
+Return
+
+<^>!+p::
+>!+p::
+if GetKeyState("Capslock", "T")
+    send ö
+else 
+    send Ö
+Return
+
+<^>![::
+>![::
+    send «
+Return
+
+<^>!]::
+>!]::
+    send »
+Return
+
+<^>!\::
+>!\::
+    send ¬
+Return
+
+<^>!+\::
+>!+\::
+    send ¦
+Return
+
+; Middle row
+
+<^>!a::
+>!a::
+if GetKeyState("Capslock", "T")
+    send Á
+else 
+    send á 
+Return
+
+<^>!+a::
+>!+a::
+if GetKeyState("Capslock", "T")
+    send á 
+else 
+    send Á
+Return
+
+<^>!s::
+>!s::
+    send ß
+Return
+
+<^>!+s::
+>!+s::
+    send §
+Return
+
+<^>!d::
+>!d::
+if GetKeyState("Capslock", "T")
+    send Ð
+else 
+    send ð
+Return
+
+<^>!+d::
+>!+d::
+if GetKeyState("Capslock", "T")
+    send ð
+else 
+    send Ð
+Return
+
+<^>!l::
+>!l::
+if GetKeyState("Capslock", "T")
+    send Ø
+else 
+    send ø
+Return
+
+<^>!+l::
+>!+l::
+if GetKeyState("Capslock", "T")
+    send ø
+else 
+    send Ø
+Return
+
+<^>!;::
+>!;::
+    send ¶
+Return
+
+<^>!+;::
+>!+;::
+    send º
+Return
+
+<^>!'::
+>!'::
+    send ´
+Return
+
+<^>!+'::
+>!+'::
+    send ¨
+Return
+
+; Bottom row
+<^>!z::
+>!z::
+if GetKeyState("Capslock", "T")
+    send Æ
+else 
+    send æ
+Return
+
+<^>!+z::
+>!+z::
+if GetKeyState("Capslock", "T")
+    send æ
+else 
+    send Æ
+Return
+
+<^>!c::
+>!c::
+    send ©
+Return
+
+<^>!+c::
+>!+c::
+    send ¢
+Return
+
+<^>!n::
+>!n::
+if GetKeyState("Capslock", "T")
+    send Ñ
+else
+    send ñ
+Return
+
+<^>!+n::
+>!+n::
+if GetKeyState("Capslock", "T")
+    send ñ
+else
+    send Ñ
+Return
+
+<^>!m::
+>!m::
+    send µ
+Return
+
+<^>!,::
+>!,::
+if GetKeyState("Capslock", "T")
+    send Ç
+else
+    send ç
+Return
+
+<^>!+,::
+>!+,::
+if GetKeyState("Capslock", "T")
+    send ç
+else
+    send Ç
+Return
 
 <^>!/::
-RAlt & /::
-AppsKey & /::
+>!/::
     send ¿
 Return
 
-<^>!Up::
-RAlt & Up::
-AppsKey & Up::
-    Send {Volume_Up}
+; Numbers row
+
+<^>!+1::
+>!+1::
+    send ¹
 Return
 
-<^>!Down::
-RAlt & Down::
-AppsKey & Down::
-    Send {Volume_Down}
+<^>!1::
+>!1::
+AppsKey & 1::
+    send ¡
 Return
 
-<^>!Del::
-RAlt & Del::
-AppsKey & Del::
-    Send {Volume_Mute}
+<^>!2::
+>!2::
+AppsKey & 2::
+    send ²
 Return
 
-<^>!Left::
-RAlt & Left::
-AppsKey & Left::
-    Send {Media_Prev}
+<^>!3::
+>!3::
+AppsKey & 3::
+    send ³
 Return
 
-<^>!Right::
-RAlt & Right::
-AppsKey & Right::
-    Send {Media_Next}
+<^>!4::
+>!4::
+AppsKey & 4::
+    send ¤
 Return
 
-<^>!Home::
-RAlt & Home::
-AppsKey & Home::
-    Send {Volume_Mute}
+<^>!+4::
+>!+4::
+    send £
 Return
 
-<^>!End::
-RAlt & End::
-AppsKey & End::
-    Send {Media_Play_Pause}
+<^>!5::
+>!5::
+AppsKey & 5::
+    send €
 Return
 
-LWin Up::
-    send {AltDown}{Space}{AltUp}
+<^>!6::
+>!6::
+AppsKey & 6::
+    send ¼
 Return
 
-; Remaping of super + arrows to resize active window (behaviour lost because of the left win key remap)
-LWin & Down::
-    WinMinimize, A
+<^>!7::
+>!7::
+AppsKey & 7::
+    send ½
 Return
 
-LWin & Up::
-    WinMaximize, A
+<^>!8::
+>!8::
+AppsKey & 8::
+    send ¾
 Return
+
+<^>!9::
+>!9::
+AppsKey & 9::
+    send ‘
+Return
+
+<^>!0::
+>!0::
+AppsKey & 0::
+    send ’
+Return
+
+<^>!-::
+>!-::
+AppsKey & -::
+    send ¥
+Return
+
+<^>!=::
+>!=::
+AppsKey & =::
+    send ×
+Return
+
+<^>!+=::
+>!+=::
+    send ÷
+Return
+
+
