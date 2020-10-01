@@ -7,7 +7,7 @@ Shortcut and keys remap for "ten key less" keyboards on Windows systems. This sc
 
 ## Setup
 
-For now run the script with [Autohotkey](https://www.autohotkey.com). As soon as other platforms are supported a makefile would be provided.
+For now run the scripts with [Autohotkey](https://www.autohotkey.com). Maybe a build tool would be provided to get a .exe file with all the hacks.
 
 ## Features
 
