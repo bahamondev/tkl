@@ -1,398 +1,455 @@
-﻿
-; Upper row
-<^>!q::
+﻿; Upper row
 >!q::
-if GetKeyState("Capslock", "T")
+if GetKeyState("Capslock", "T") {
     send Ä
-else 
+	send {RAlt up}
+} else {
     send ä
+	send {RAlt up}
+}
 Return
 
-<^>!+q::
 >!+q::
     send Ä
+	send {RAlt up}
 Return
 
-<^>!w::
 >!w::
-if GetKeyState("Capslock", "T")
+if GetKeyState("Capslock", "T") {
     send Å
-else 
+	send {RAlt up}
+} else {
     send å
+	send {RAlt up}
+}
 Return
 
-<^>!+w::
 >!+w::
-if GetKeyState("Capslock", "T")
+if GetKeyState("Capslock", "T") {
     send å
-else 
+	send {RAlt up}
+} else {
     send Å
+	send {RAlt up}
+}
 Return
 
-<^>!e::
 >!e::
-if GetKeyState("Capslock", "T")
+if GetKeyState("Capslock", "T") {
     send É
-else 
+	send {RAlt up}
+} else {
     send é 
+	send {RAlt up}
+}
 Return
 
-<^>!+e::
 >!+e::
-if GetKeyState("Capslock", "T")
+if GetKeyState("Capslock", "T") {
     send é 
-else 
+	send {RAlt up}
+} else {
     send É
+	send {RAlt up}
+}
 Return
 
-<^>!r::
 >!r::
     send ®
+	send {RAlt up}
 Return
 
-<^>!t::
 >!t::
     send þ
+	send {RAlt up}
 Return
 
-<^>!+t::
 >!+t::
     send Þ
+	send {RAlt up}
 Return
 
-<^>!y::
 >!y::
-if GetKeyState("Capslock", "T")
+if GetKeyState("Capslock", "T") {
     send Ü
-else 
+	send {RAlt up}
+} else {
     send ü
+	send {RAlt up}
+}
 Return
 
-<^>!+y::
 >!+y::
-if GetKeyState("Capslock", "T")
+if GetKeyState("Capslock", "T") {
     send ü
-else 
+	send {RAlt up}
+} else {
     send Ü
+	send {RAlt up}
+}
 Return
 
-<^>!u::
 >!u::
-if GetKeyState("Capslock", "T")
+if GetKeyState("Capslock", "T") {
     send Ú
-else 
+	send {RAlt up}
+} else {
     send ú
+	send {RAlt up}
+}
 Return
-<^>!+u::
+
 >!+u::
-if GetKeyState("Capslock", "T")
+if GetKeyState("Capslock", "T") {
     send ú
-else 
+	send {RAlt up}
+} else {
     send Ú
+	send {RAlt up}
+}
 Return
 
-<^>!i::
 >!i::
-if GetKeyState("Capslock", "T")
+if GetKeyState("Capslock", "T") {
     send Í
-else 
+	send {RAlt up}
+} else {
     send í
+	send {RAlt up}
+}
 Return
-<^>!+i::
+
 >!+i::
-if GetKeyState("Capslock", "T")
+if GetKeyState("Capslock", "T") {
     send í
-else 
+	send {RAlt up}
+} else {
     send Í
+	send {RAlt up}
+}
 Return
 
-<^>!o::
 >!o::
-if GetKeyState("Capslock", "T")
+if GetKeyState("Capslock", "T") {
     send Ó
-else 
+	send {RAlt up}
+} else {
     send ó
+	send {RAlt up}
+}
 Return
-<^>!+o::
+
 >!+o::
-if GetKeyState("Capslock", "T")
+if GetKeyState("Capslock", "T") {
     send ó
-else 
+	send {RAlt up}
+} else {
     send Ó
+	send {RAlt up}
+}
 Return
 
-<^>!p::
 >!p::
-if GetKeyState("Capslock", "T")
+if GetKeyState("Capslock", "T") {
     send Ö
-else 
+	send {RAlt up}
+} else {
     send ö
+	send {RAlt up}
+}
 Return
 
-<^>!+p::
 >!+p::
-if GetKeyState("Capslock", "T")
+if GetKeyState("Capslock", "T") {
     send ö
-else 
+	send {RAlt up}
+} else {
     send Ö
+	send {RAlt up}
+}
 Return
 
-<^>![::
 >![::
     send «
+	send {RAlt up}
 Return
 
-<^>!]::
 >!]::
     send »
+	send {RAlt up}
 Return
 
-<^>!\::
 >!\::
     send ¬
+	send {RAlt up}
 Return
 
-<^>!+\::
 >!+\::
     send ¦
+	send {RAlt up}
 Return
 
 ; Middle row
 
-<^>!a::
 >!a::
-if GetKeyState("Capslock", "T")
+if GetKeyState("Capslock", "T") {
     send Á
-else 
+	send {RAlt up}
+} else {
     send á 
+	send {RAlt up}
+}
 Return
 
-<^>!+a::
 >!+a::
-if GetKeyState("Capslock", "T")
+if GetKeyState("Capslock", "T") {
     send á 
-else 
+	send {RAlt up}
+} else {
     send Á
+	send {RAlt up}
+}
 Return
 
-<^>!s::
 >!s::
     send ß
+	send {RAlt up}
 Return
 
-<^>!+s::
 >!+s::
     send §
+	send {RAlt up}
 Return
 
-<^>!d::
 >!d::
-if GetKeyState("Capslock", "T")
+if GetKeyState("Capslock", "T") {
     send Ð
-else 
+	send {RAlt up}
+} else {
     send ð
+	send {RAlt up}
+}
 Return
 
-<^>!+d::
 >!+d::
-if GetKeyState("Capslock", "T")
+if GetKeyState("Capslock", "T") {
     send ð
-else 
+	send {RAlt up}
+} else {
     send Ð
+	send {RAlt up}
+}
 Return
 
-<^>!l::
 >!l::
-if GetKeyState("Capslock", "T")
+if GetKeyState("Capslock", "T") {
     send Ø
-else 
+	send {RAlt up}
+} else {
     send ø
+	send {RAlt up}
+}
 Return
 
-<^>!+l::
 >!+l::
-if GetKeyState("Capslock", "T")
+if GetKeyState("Capslock", "T") {
     send ø
-else 
+	send {RAlt up}
+} else {
     send Ø
+	send {RAlt up}
+}
 Return
 
-<^>!;::
 >!;::
     send ¶
+	send {RAlt up}
 Return
 
-<^>!+;::
 >!+;::
     send º
+	send {RAlt up}
 Return
 
-<^>!'::
 >!'::
     send ´
+	send {RAlt up}
 Return
 
-<^>!+'::
 >!+'::
     send ¨
+	send {RAlt up}
 Return
 
 ; Bottom row
-<^>!z::
+
 >!z::
-if GetKeyState("Capslock", "T")
+if GetKeyState("Capslock", "T") {
     send Æ
-else 
+	send {RAlt up}
+} else {
     send æ
+	send {RAlt up}
+}
 Return
 
-<^>!+z::
 >!+z::
-if GetKeyState("Capslock", "T")
+if GetKeyState("Capslock", "T") {
     send æ
-else 
+	send {RAlt up}
+} else {
     send Æ
+	send {RAlt up}
+}
 Return
 
-<^>!c::
 >!c::
     send ©
+	send {RAlt up}
 Return
 
-<^>!+c::
 >!+c::
     send ¢
+	send {RAlt up}
 Return
 
-<^>!n::
 >!n::
-if GetKeyState("Capslock", "T")
+if GetKeyState("Capslock", "T") {
     send Ñ
-else
+	send {RAlt up}
+} else {
     send ñ
+	send {RAlt up}
+}
 Return
 
-<^>!+n::
 >!+n::
-if GetKeyState("Capslock", "T")
+if GetKeyState("Capslock", "T") {
     send ñ
-else
+	send {RAlt up}
+} else {
     send Ñ
+	send {RAlt up}
+}
 Return
 
-<^>!m::
 >!m::
     send µ
+	send {RAlt up}
 Return
 
-<^>!,::
 >!,::
-if GetKeyState("Capslock", "T")
+if GetKeyState("Capslock", "T") {
     send Ç
-else
+	send {RAlt up}
+} else {
     send ç
+	send {RAlt up}
+}
 Return
 
-<^>!+,::
 >!+,::
-if GetKeyState("Capslock", "T")
+if GetKeyState("Capslock", "T") {
     send ç
-else
+	send {RAlt up}
+} else {
     send Ç
+	send {RAlt up}
+}
 Return
 
-<^>!/::
 >!/::
     send ¿
+	send {RAlt up}
 Return
 
 ; Numbers row
 
-<^>!+1::
 >!+1::
     send ¹
+	send {RAlt up}
 Return
 
-<^>!1::
 >!1::
 AppsKey & 1::
     send ¡
+	send {RAlt up}
 Return
 
-<^>!2::
 >!2::
 AppsKey & 2::
     send ²
+	send {RAlt up}
 Return
 
-<^>!3::
 >!3::
 AppsKey & 3::
     send ³
+	send {RAlt up}
 Return
 
-<^>!4::
 >!4::
 AppsKey & 4::
     send ¤
+	send {RAlt up}
 Return
 
-<^>!+4::
 >!+4::
     send £
+	send {RAlt up}
 Return
 
-<^>!5::
 >!5::
 AppsKey & 5::
     send €
+	send {RAlt up}
 Return
 
-<^>!6::
 >!6::
 AppsKey & 6::
     send ¼
+	send {RAlt up}
 Return
 
-<^>!7::
 >!7::
 AppsKey & 7::
     send ½
+	send {RAlt up}
 Return
 
-<^>!8::
 >!8::
 AppsKey & 8::
     send ¾
+	send {RAlt up}
 Return
 
-<^>!9::
 >!9::
 AppsKey & 9::
     send ‘
+	send {RAlt up}
 Return
 
-<^>!0::
 >!0::
 AppsKey & 0::
     send ’
+	send {RAlt up}
 Return
 
-<^>!-::
 >!-::
 AppsKey & -::
     send ¥
+	send {RAlt up}
 Return
 
-<^>!=::
 >!=::
 AppsKey & =::
     send ×
+	send {RAlt up}
 Return
 
-<^>!+=::
 >!+=::
     send ÷
+	send {RAlt up}
 Return
 
-
+#HotkeyModifierTimeout 250

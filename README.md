@@ -12,8 +12,7 @@ For now run the scripts with [Autohotkey](https://www.autohotkey.com). Maybe a b
 ## Features
 
   * Remapings:
-    * `Right Alt` and `AltGr` keys to the `AppsKey`
-    * `Left Super` to `Alt + Space`. That could help open your app launcher with the super key.
+    * `Left Super` to the `AppsKey`
     
   * Ease the input of accents and special characters.
     Using `Alt + key` works as a US International Layout in Windows but '," and ` keys work like in US default layout. So, if you want `á` you need to type `Alt` + `a`.
