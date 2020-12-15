@@ -1,8 +1,4 @@
-<^>!::RAlt
-RAlt & Space::Return
-RAlt::
-Send {RAlt up} 
-Return
+RControl::AppsKey
 
 RAlt & v::
     Clipboard := Clipboard
@@ -10,7 +6,10 @@ RAlt & v::
     send {RAlt Up}
 Return
 
-LWin Up:: Send {AppsKey}
+LWin Up:: 
+    Send {AltDown}{Space}
+    Send {AltUp}
+Return
 
 ; Remaping of super + arrows to resize active window (behaviour lost because of the left win key remap)
 LWin & Down::
