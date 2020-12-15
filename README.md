@@ -2,7 +2,6 @@
 
 Shortcut and keys remap for "ten key less" keyboards on Windows systems. This scripts are intended to ease: 
  * The use of TKL and 60% keyboards (but the shortcuts are also useful for full-sized keyboards).
- * The input of latin characters in US keyboard layouts. Emulates the US international layout with `AltGr` dead keys.
  * Avoid the mouse and provide a fast-change between common development apps (at least faster than Alt+Tab method).
 
 ## Setup
@@ -12,25 +11,27 @@ For now run the scripts with [Autohotkey](https://www.autohotkey.com). Maybe a b
 ## Features
 
   * Remapings:
-    * `Left Super` to the `AppsKey`
+    * `Left Super` to Alt+Space (common shortcut for app launchers)
+    * Right control to application key
     
-  * Ease the input of accents and special characters.
-    Using `Alt + key` works as a US International Layout in Windows but '," and ` keys work like in US default layout. So, if you want `á` you need to type `Alt` + `a`.
-
-  * Add media control shortcuts:
-    * `AppsKey + (arrow left/right)`: Previous/next song
-    * `AppsKey + (arrow up/down)`: Increase/decrease volume
-    * `AppsKey + Del`: mute
-    * `AppsKey + End`: Play/pause
+  * Media control shortcuts:
+    * `Right alt + (arrow left/right)`: Previous/next song
+    * `Right alt + (arrow up/down)`: Increase/decrease volume
+    * `Right alt + Del`: mute
+    * `Right alt + End`: Play/pause
     
   * Useful operations:
-    * `AppsKey + V`: Pastes clipboard content without format
+    * `Right alt + V`: Pastes clipboard content without format
     
   * Add useful shortcuts to active some app windows:
     * `Ctrl + Super + T`: Activates/Minimize Microsoft Teams window
     * `Ctrl + Super + I`: Activates/Minimize Intellij Idea window
     * `Ctrl + Super + V`: Activates/Minimize Visual Studio Code window
     * `Ctrl + Super + B`: Activates/Minimize Vivaldi (Browser) window
+
+  Note: The emulation of US international layout with AltGr keys has been removed because the right alt sometimes get 
+  stuck and cause weird behaviour when typing. If you need that layout on Windows, there is a better solution here: 
+  https://github.com/thomasfaingnaert/win-us-intl-altgr
 
 ## Contributing
 
@@ -41,7 +42,6 @@ Follow this simple rules:
  
 **TODO list:**
  
- * Make the right `Ctrl` great again. I'm thinking on how to remap that key to make it useful.
  * Automate a build to get an .exe (and add a Makefile).
  * Automate the installation.
  * Customize the build result. The user should select which features are needed.
